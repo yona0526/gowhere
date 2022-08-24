@@ -1,0 +1,610 @@
+@media only screen and (max-width: 600px) {
+    /* 메인 */
+    #main_contents {}
+    .contents .msld_pc {
+        display: none;
+    }
+    .contents .msld_mob {
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+        position: relative;
+        background-color: darkblue;
+        display: block;
+        margin: 0 auto;
+    }
+    .contents .msld_mob li img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .search_bar {
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        background: url("/vip/img/ico_srch.png") no-repeat 94% 40%;
+        border: 4px solid #0f5da5;
+        border-radius: 30px;
+        padding: 7px 12px;
+        box-sizing: border-box;
+    }
+    .search_bar input {
+        width: 85%;
+        height: 90%;
+        border: 0;
+    }
+    .search_bar label {
+        position: absolute;
+        left: -9999px;
+        ;
+    }
+    .intro_btns ul {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .intro_btns li {
+        border: 1px solid #ffa884;
+        margin-bottom: 3%;
+        border-radius: 4vw;
+        width: 27vw;
+        height: 22vw;
+        box-sizing: border-box;
+        line-height: 100%;
+    }
+    .intro_btns li a {
+        padding: 15px;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        font-size: 3.9vw;
+        font-weight: 600;
+        color: #333;
+        transform: skew(-0.1deg);
+        text-align: left;
+    }
+    .intro_btns li#intro_tour {
+        width: 97%;
+        background: url('/vip/img/main_tour.png') no-repeat 80% center;
+        background-size: 65%;
+    }
+    .intro_btns li#intro_invi {
+        background: url('/vip/img/mi_invi.png') no-repeat 80% 65%;
+        background-size: 40%;
+    }
+    .intro_btns li#intro_golf {
+        background: url('/vip/img/mi_golf.png') no-repeat 80% 65%;
+        background-size: 40%;
+    }
+    .intro_btns li#intro_hlth {
+        background: url('/vip/img/mi_health.png') no-repeat 80% 65%;
+        background-size: 40%;
+    }
+    .intro_btns li#intro_mem {
+        background: url('/vip/img/mi_mem.png') no-repeat 80% 65%;
+        background-size: 40%;
+    }
+    .intro_btns li#intro_part {
+        background: url('/vip/img/mi_living.png') no-repeat 80% 65%;
+        background-size: 40%;
+    }
+    .intro_btns li#intro_shop {
+        background: url('/vip/img/mi_shop.png') no-repeat 80% 65%;
+        background-size: 40%;
+    }
+    .notice_slide_mob li {
+        width: 100%;
+        margin-left: 1px;
+    }
+    .notice_slide_mob li img {
+        width: 100%;
+    }
+    /* section h2 {
+    font-size:5.5vw; font-weight:600; margin-bottom:10px;
+} */
+    section .new_tour li,
+    section .intro_slide li {
+        display: block;
+        margin: 0 auto;
+    }
+    section .new_tour li .slide_thumb img,
+    section .intro_slide li .slide_thumb img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+    }
+    section .swiper li .slide_detail {
+        padding: 15px;
+        height: 22vw;
+        box-sizing: border-box;
+    }
+    section .swiper li .slide_detail .name {
+        font-size: 4.5vw;
+        font-weight: 600;
+        padding-bottom: 7px;
+    }
+    section .swiper li .slide_detail p {
+        width: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* 여러 줄 자르기 추가 스타일 */
+        white-space: normal;
+        line-height: 1.2;
+        text-align: left;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        transform: skew(0.034deg);
+        line-height: 1.1rem;
+        font-size: 3.6vw;
+    }
+    #main_contents .cs_number {
+        text-align: center;
+        padding: 30px auto;
+        transform: skew(-0.1deg);
+    }
+    #main_contents .cs_number #phone_no {
+        font-size: 7.5vw;
+        font-weight: 700;
+        color: #0f5da5;
+        padding: 10px 15px;
+        border-bottom: 1px solid #dedede;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #main_contents .cs_number p {
+        padding-top: 10px;
+        font-weight: 600;
+    }
+    #main_contents .main_sns {
+        margin-top: 30px;
+    }
+
+   
+    #main_contents .main_sns li a {
+        width: 100%;
+        border: 1px solid #3a3a3a;
+        border-radius: 30px;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    #main_contents .main_sns li a img {
+        width: 32px;
+    }
+    #main_contents .main_sns li a span {
+        display: inline-block;
+        margin-left: 10px;
+        font-weight: Bold;
+        transform: skew(-0.1deg);
+    }
+    /* 숙박 리스트 */
+    .tour_grade ul li:last-child {
+        margin-right: 0;
+    }
+    .tour_grade ul li.grade_on {
+        background: #0f5da5;
+    }
+    .tour_grade ul li.grade_on a {
+        color: #fff
+    }
+    .tlist_price span {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    /* 시설 상세보기 */
+    .icons_facil {
+        display: flex;
+        flex-wrap: wrap
+    }
+    .icons_facil li {
+        margin: 0 8px 10px;
+        text-align: center;
+    }
+    .icons_facil li img {
+        width: 100%;
+        width: 25px;
+    }
+    .icons_facil li span {
+        font-size: 13px;
+        display: block;
+    }
+    .tv_room_detail {
+        background: #f9f9f9;
+    }
+    .tv_rm_icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tv_rm_icons li {
+        border: 1px solid #dedede;
+        padding: 3px 5px;
+        border-radius: 5px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+    .tv_rm_icons li img {
+        width: 18px;
+        vertical-align: middle;
+    }
+    .tv_rm_icons li span {
+        font-size: 12px;
+    }
+    .slct_coupon {
+        width: 100%;
+        height: 35px;
+        margin: 5px 0 10px;
+        border: 1px solid #dedede;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .slct_coupon select {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    /* 
+.tv_rm_dt_txt .tv_extra h3 {font-size:17px; margin-bottom:5px;}
+.tv_rm_dt_txt .tv_extra h3 span {font-size:13px; }
+.tv_rm_dt_txt .tv_extra p {font-size:14px;padding:5px;line-height:17px;} */
+    .tv_rm_dt_txt #tvextra_price {
+        margin-top: 5px
+    }
+    .tv_rm_dt_txt #tvextra_price dl {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        font-size: 15px;
+        line-height: 17px;
+        padding: 0 15px;
+    }
+    .tv_rm_dt_txt #tvextra_price dl dt {
+        margin-right: 15px;
+    }
+    .tv_rm_dt_txt #tvextra_price dl dd {
+        color: #0f5da5;
+        font-weight: 500;
+    }
+    .tv_room_detail .btn_book {
+        margin: 10px auto;
+        text-align: center;
+        padding: 5px 10px;
+    }
+    .tv_tbl_price table th {
+        color: #818181;
+    }
+    .tv_tbl_price table th,
+    .tv_tbl_price table td {
+        border: 1px solid #dedede;
+        font-size: 14px;
+        padding: 5px;
+        vertical-align: middle;
+    }
+    .tv_sight li span {
+        text-align: center;
+        display: block;
+    }
+    .tv_sight li img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    /* 예약확인&결제 */
+    .confirm_contents .confirm_user label {
+        color: #818181;
+    }
+    .confirm_contents .confirm_user dd {
+        width: 80%
+    }
+    .confirm_contents .confirm_user input {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #dedede;
+        padding: 0 10px;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+    .confrim_pay .cf_pay_way {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 10px;
+    }
+    .confrim_pay .cf_pay_way .pay_way_box {
+        line-height: 6vw;
+        font-size: 4vw;
+        ;
+    }
+    .confrim_pay .confrim_price div {
+        text-align: right;
+    }
+    .confrim_pay .confrim_price span {
+        font-size: 6.2vw;
+        font-weight: 600;
+        padding-right: 5px
+    }
+    .list_contents,
+    .complete_contents,
+    .view_contents,
+    .mypage_contents {
+        transform: skew(-0.05deg);
+    }
+    .complete_contents {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .complete_contents .check_anime {
+        text-align: center;
+        margin: 30px auto;
+    }
+    .cmplt_title {
+        padding: 15px 30px;
+        text-align: center;
+    }
+    .complete_contents .cmplt_txt {
+        width: 73%;
+        margin: 15px auto 30px;
+    }
+    .complete_contents .tv_mtxt dl {
+        font-size: 3.8vw;
+        line-height: 1.8rem;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .complete_contents .tv_mtxt dl dt {
+        width: unset;
+    }
+    /* 마이페이지 */
+    .mypage_contents {
+        padding-top: 15px;
+    }
+    .mypage_contents .mem_info {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mypage_contents .mem_info h3 {
+        font-size: 3.6vw;
+        font-weight: 600;
+    }
+    .mypage_contents .mem_info h3 span {
+        font-size: 6vw;
+        padding-right: 5px;
+    }
+    .mypage_contents .mem_info h3 .mem_phone {
+        color: #818181;
+        font-size: 4.2vw;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .mypage_contents .mycard li img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .mypage_contents .mycard li .menu-btn-next {
+        transform: skew(0deg);
+        display: flex;
+        font-size: 4.4vw;
+        font-weight: 500;
+        padding: 13px 15px 3px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mypage_contents .mycard .swiper-pagination {
+        bottom: 55px;
+    }
+    .mypage_contents .mycard .swiper-pagination-bullet {
+        background: #818181
+    }
+    .mypage_contents .mp_list {
+        margin: 15px 0;
+    }
+    .mypage_contents .mp_list li {
+        font-weight: 500;
+        padding-left: 30px;
+        height: 3.2rem;
+        line-height: 3.2rem;
+        border-bottom: 1px solid #dedede;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mypage_contents .mp_list li:last-child {
+        border: none;
+    }
+    .mypage_contents .mp_list li span,
+    .mypage_contents .mp_list li img {
+        padding-right: 10px;
+        color: #3a3a3a;
+        vertical-align: middle;
+    }
+    .mypage_contents .mp_list li .arrow_forward {
+        color: #818181;
+        font-size: 3.8vw;
+    }
+    .mypage_contents h2 {
+        text-align: center;
+    }
+    .mypage_contents h2 img {
+        width: 60%;
+        display: block;
+        margin: 0 auto 10px;
+        border-radius: 10px;
+        box-shadow: 2px 6px 6px #dedede;
+    }
+    /* 카드 상세 페이지 */
+    .card-info-wrap {
+        margin: 15px 0
+    }
+    .card-info-wrap .shadow_box {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .card-info-wrap .card_list .card-info-grade {
+        padding: 5px 10px;
+        background-color: #eeada7;
+        color: #fff;
+        display: inline-block;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+    .card-info-wrap .card_list h4 {
+        font-size: 5.8vw;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .card-info-wrap .card_list h4 .card-exp {
+        display: flex;
+        font-size: 3.6vw;
+        font-weight: 600;
+    }
+    .card-info-wrap .card_list dl dt {
+        color: #818181;
+        padding-right: 10px
+    }
+    .card-info-wrap .card_list .card-detail table {
+        border: 1px solid #dedede;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .card-info-wrap .card_list .card-detail table caption {
+        font-weight: 600;
+        font-size: 4vw;
+        padding: 10px;
+        border-top: 1px solid #3a3a3a;
+    }
+    .card-info-wrap .card_list .card-detail table th {
+        font-weight: 500;
+        color: #3a3a3a;
+        font-weight: 600;
+    }
+    .card-info-wrap .card_list .card-detail table td,
+    .card-info-wrap .card_list .card-detail table th {
+        padding: 7px 10px;
+        border: 1px solid #dedede;
+    }
+    .card-info-wrap .card_list .card-detail table .cd-det-used td {
+        color: #818181
+    }
+    .card-info-wrap .card_list .card-detail table .cd-det-ava td {
+        font-weight: 600
+    }
+    /* 비밀번호 변경 */
+    .pw_wrap {
+        padding: 10px;
+    }
+    .pw_wrap dl {
+        padding: 10px 0 15px
+    }
+    .pw_wrap dl dt {
+        padding-bottom: 10px;
+        font-size: 4.2vw;
+        font-weight: 500
+    }
+    .pw_wrap dl dd {
+        border: 1px solid #0f5da5;
+        padding: 4px 16px;
+        border-radius: 22px;
+    }
+    .pw_wrap dl dd input {
+        width: 100%;
+        box-sizing: border-box;
+        height: 36px;
+        line-height: 36px;
+        border: none
+    }
+    .pw_wrap dl label[for='prev_pass'] {
+        color: #818181
+    }
+    /* 쇼핑 */
+    .shoView_price .bf_dc {
+        text-decoration: line-through;
+        color: #818181
+    }
+    .shoView_price p {
+        display: inline-block;
+    }
+    .shoView_price .dc_rate {
+        font-size: 20px;
+        margin-left: 15px;
+        font-weight: 600;
+        color: #0f5da5
+    }
+    .shoView_price .dc_rate span {
+        font-size: 30px;
+        vertical-align: text-bottom;
+        color: #0f5da5
+    }
+    .shoView_price .aft_dc {
+        font-size: 6.8vw;
+        font-weight: 600;
+        text-align: right;
+    }
+    .shoView_detail img {
+        width: 100%;
+    }
+    .shopView_opt dl {
+        font-size: 4.2vw;
+        line-height: 1.8rem;
+        margin-bottom: 15px
+    }
+    .shopView_opt dl select {
+        width: 80px;
+        height: 33px;
+        display: inline-block;
+        text-align: center;
+        font-size: 4.2vw;
+    }
+    .list_contents .shoView_price {
+        margin-top: 10px;
+    }
+    .list_contents .shoView_price .aft_dc {
+        font-size: 5.8vw
+    }
+    /*멤버십 헬스 리스트*/
+    .mbship_list li#hlth_dna {
+        background-image: url("http://img.gmidas.com/julgigobaseimg/mobile/images/main/health_li_01.jpg");
+    }
+    .mbship_list li#hlth_exam {
+        background-image: url("http://img.gmidas.com/julgigobaseimg/mobile/images/main/health_li_02.jpg");
+    }
+    /*스파 가격 */
+    .spa_price {
+        padding-bottom: 10px
+    }
+    .spa_price dd {
+        margin-top: -5px;
+    }
+    .spa_price dd .spa-aft_price {
+        display: block;
+        font-size: 4.2vw
+    }
+    .spa_price dd .spa-aft_price strong {
+        font-size: 5.5vw;
+        font-weight: 600;
+        margin-right: 3px;
+    }
+    .spa_price dd .spa-bf_price {
+        color: #818181;
+        text-decoration: line-through;
+    }
+    .spa_price dd .material-symbols-rounded {
+        vertical-align: text-bottom;
+        font-size: 7.5vw;
+    }
+    .spa_price dd .material-symbols-rounded,
+    .spa_price dd .spa-bf_price {
+        display: inline-block;
+    }
+}

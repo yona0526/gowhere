@@ -1,0 +1,506 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #dedede;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+header .site_grade {
+    margin-top: -10px;
+    font-size: 17px;
+    font-weight: 900;
+    margin-left: -5px;
+    font-family: 'Material Symbols Rounded';
+    color: #818181;
+    word-spacing: 0;
+}
+
+header .left-header .btn_menu span {
+    width: 27px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 7px
+}
+
+header .left-header .btn_menu span:last-child {
+    margin-bottom: 0;
+}
+
+header h1 {
+    cursor: pointer;
+}
+
+header h1 img {
+    width: 100px;
+}
+
+header .menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+header .menu .btn_menuClose {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+header .menu .user_info,
+header .menu .gnb,
+header .menu .lnb,
+header .menu_sns {
+    padding: 15px 10px;
+    border-bottom: 1px solid #dedede
+}
+
+header .menu .gnb>li {
+    font-size: 5.5vw;
+    font-weight: 600;
+    line-height: 8vw;
+    margin-top: 2.5vw;
+}
+
+header .menu .gnb li a {
+    display: block;
+    color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* header .menu #gnb-tour_grade {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+header #gnb-tour_grade>li {
+    width: 50%;
+    line-height: 7vw;
+    text-align: left;
+    font-size: 4.5vw;
+} */
+
+.left-header {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header .right-header {
+    margin-right: 10px;
+    display: flex;
+}
+
+header .right-header div {
+    margin-right: 10px;
+}
+
+header .right-header div:last-child {
+    margin-right: 0;
+}
+
+header .btn_user {
+    width: 30px;
+    height: 30px;
+    background: url("/vip/img/nav/app_my.png") no-repeat center;
+    background-size: 83%;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+header .btn_home {
+    background: url("/vip/img/head_home.png") no-repeat center;
+    width: 30px;
+    height: 30px;
+    background-size: 83%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+header .right-header .btn_srch {
+    background: url("/vip/img/nav/app_srch.png") no-repeat center;
+    width: 30px;
+    height: 30px;
+    background-size: 83%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+header .search_modal {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 8;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    box-shadow: 5px 10px 15px #aaa;
+}
+
+header .search_modal .srch_box {
+    border: 1px solid #085499;
+    border-radius: 22px;
+    padding: 2px 20px;
+}
+
+header .search_modal select,
+header .search_modal input {
+    border: none;
+    width: 100%;
+    height: 95%;
+    box-sizing: border-box;
+    vertical-align: 3px;
+}
+
+header .search_modal #srch_box_type,
+header .search_modal #srch_box_area {
+    margin-right: 1%;
+    width: 49%;
+    height: 44px;
+    line-height: 44px;
+    box-sizing: border-box;
+}
+
+header .search_modal #srch_box_name {
+    margin-top: 10px;
+    height: 44px;
+    width: 88%;
+    box-sizing: border-box;
+    margin-right: 1%;
+}
+
+header .search_modal #srch_box_btn {
+    width: 11%;
+    border: none;
+    height: 40px;
+    background: none;
+}
+
+header .search_modal #srch_box_btn img {
+    width: 100%;
+}
+
+
+/*콘텐츠*/
+
+.contents {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    min-height: 540px;
+}
+
+
+/*푸터*/
+
+footer {
+    background: #f5f5f5;
+    color: #444;
+    box-sizing: border-box;
+    transform: skew(-0.07deg);
+}
+
+footer .foot_links {
+    border-bottom: 1px solid #dedede
+}
+
+footer .foot_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .foot_links li {
+    text-align: center;
+    width: 33.333%;
+    height: 45px;
+    line-height: 45px;
+}
+
+footer .foot_links li a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+footer .address_wrap dl {
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .foot_terms {
+    margin-bottom: 10px
+}
+
+footer .foot_terms a {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #888;
+    font-weight: 500;
+}
+
+footer .address_wrap dl dt {
+    margin-right: 10px;
+    color: #888
+}
+
+footer .foot_logo {
+    padding: 0 30px 15px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+footer .foot_logo img {
+    width: 80px;
+}
+
+footer .foot_logo span {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+/* 퀵메뉴 */
+
+.quick_menu {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    z-index: 8;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #dedede
+}
+
+.quick_menu ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quick_menu ul li {
+    width: 20%;
+    text-align: center;
+    line-height: 55px;
+}
+
+.quick_menu ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block
+}
+
+.quick_menu ul li img {
+    width: 33%;
+    vertical-align: middle;
+}
+
+.quick_menu ul #qck_home img {
+    width: 50%;
+}
+
+
+/**/
+
+.shadow_box {
+    box-shadow: 2px 2px 10px #ededed;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main_btnArea {
+    text-align: center;
+}
+
+.main_btnArea button {
+    margin: 0 auto 10px;
+}
+
+.btnArea_notice {
+    margin: 10px 0
+}
+
+.btn-full {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-red {
+    background: #085499;
+    color: #fff;
+    transition: 200ms;
+}
+
+.btn-red:hover {
+    border: 1px solid #085499 !important;
+    background: #fff;
+    color: #085499;
+}
+
+.btn-white {
+    border: 1px solid #085499 !important;
+    background: #fff;
+    color: #085499;
+    transition: 200ms;
+}
+
+.btn-white:hover {
+    background: #085499;
+    color: #fff;
+}
+
+.btn-half {
+    width: 48.5%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-half:first-child {
+    margin-right: 1%;
+}
+
+.btn-yellow {
+    background: #eeada7;
+    margin-top: 10px;
+    color: #fff;
+    border: 1px solid #eeada7
+}
+
+.swiper {
+    transform: skew(0deg)
+}
+
+.swiper-slide {
+    cursor: pointer;
+}
+
+.material-symbols-rounded {
+    color: #3a3a3a
+}
+
+.tour-grade-fam {
+    background-color: #3EB785 !important;
+}
+
+.tour-grade-vip {
+    background-color: #DC6A9B !important;
+}
+
+.tour-grade-svip {
+    background-color: #6D71CE !important;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: none;
+}
+
+.btn-top img {
+    opacity: .8;
+}
+
+.cate_select {
+    border: 1px solid #085499;
+    color: #085499;
+    border-radius: 20px;
+    padding: 2px 0;
+    margin: 10px auto;
+}
+
+.cate_select select {
+    display: block;
+    width: 90%;
+    height: 35px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 auto;
+}
+
+.select_box {
+    margin: 5px auto;
+}
+
+.select_half {
+    width: 49%;
+    display: inline-block;
+}
+
+.tbl_notice {
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tbl_notice .material-symbols-rounded {
+    vertical-align: text-bottom;
+    margin-right: 5px
+}
+
+
+/* 멤버십 리스트 - 공통*/
+
+.mbship_list li {
+    height: 50vw;
+    position: relative;
+    color: #fff
+}
+
+.mbship_list li .mbs-list_tit {
+    font-size: 6vw;
+    font-weight: 600
+}
+
+.mbship_list li .mbs-list_txt {
+    padding: 10px 0;
+    font-size: 3.6vw;
+    line-height: 4.2vw;
+}
+
+.mbship_list li .btn-mbsList {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: 40%;
+    font-weight: 600;
+    color: #fff;
+    height: 36px;
+    background: rgb(0, 0, 0, .5);
+    border: 2px solid #fff;
+    border-radius: 18px
+}

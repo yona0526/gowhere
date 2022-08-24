@@ -1,0 +1,2340 @@
+/* @media only screen and (min-width: 992px) { */
+
+
+/* 메인 */
+
+.header-mob {
+    display: none;
+}
+
+header#header-pc {
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 160px;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+}
+
+header#header-pc h1 {
+    width: 180px;
+}
+
+header#header-pc h1 .site_grade {
+    font-size: 18px;
+    vertical-align: 7px;
+}
+
+header#header-pc h1 img {
+    width: 66%
+}
+
+header#header-pc .gnb-pc {
+    z-index: 9999;
+    /*width: calc( 100% - 200px);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header#header-pc .gnb-pc>li {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0 0 5px;
+    line-height: 55px;
+    position: relative;
+}
+
+
+/* header#header-pc .gnb-pc >li>a {line-height: 70px;} */
+
+header#header-pc .gnb-pc .gnb_sub {
+    position: absolute;
+    width: fit-content;
+    top: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 185px;
+    left: -50px;
+}
+
+header#header-pc .gnb-pc li .gnb_sub {
+    display: none;
+}
+
+header#header-pc .gnb-pc>li:hover .gnb_sub {
+    display: block;
+}
+
+header#header-pc .gnb-pc li .gnb_sub li {
+    background-color: rgb(255, 255, 255, .95);
+    padding: 0 15px;
+    text-align: center;
+}
+
+header#header-pc .gnb-pc li .gnb_sub li:hover {
+    border: none;
+    font-weight: 600;
+    color: #333
+}
+
+
+/* .header#header-pc .gnb-pc li #gnb_sub {
+  display: none;
+} */
+
+header#header-pc .gnb-pc li .gnb_sub li a {
+    padding: 0 5px;
+}
+
+header#header-pc .gnb-pc>li>a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+header#header-pc .gnb-pc li a:hover {
+    color: #818181
+}
+
+header#header-pc .gnb-pc>li::after {
+    content: '';
+    margin-top: -20px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #eeada7;
+    transition: width .3s;
+}
+
+header#header-pc .gnb-pc li:hover::after {
+    width: 100%;
+}
+
+.quick_menu {
+    display: none;
+}
+
+header#header-pc .lnb {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header#header-pc .lnb li {
+    cursor: pointer;
+}
+
+header#header-pc .lnb span {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#main_contents {
+    padding: 0
+}
+
+#main_contents section {
+    margin: 80px auto;
+}
+
+#main_contents .mslide_wrap {
+    margin: 0
+}
+
+#main_wrap {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.contents .msld_mob {
+    display: none
+}
+
+.contents .msld_pc {
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+#main_contents h2 {
+    padding: 0 160px;
+    text-align: center;
+}
+
+.contents .msld_pc li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.search_bar {
+    width: 50%;
+    height: 60px;
+    background-color: #fff;
+    background: url("/vip/img/ico_srch.png") no-repeat 97% 40%;
+    border: 4px solid #085499;
+    border-radius: 30px;
+    margin: 10px auto;
+    padding: 7px 12px;
+    box-sizing: border-box;
+}
+
+.search_bar input {
+    width: 85%;
+    height: 90%;
+    border: 0;
+    font-size: 16px;
+}
+
+.search_bar label {
+    position: absolute;
+    left: -9999px;
+    ;
+}
+
+.intro_btns {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro_btns ul {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.intro_btns li {
+    border: 1px solid #2e77ba;
+    margin-bottom: 3%;
+    border-radius: 90px;
+    width: 180px;
+    height: 180px;
+    box-sizing: border-box;
+    line-height: 100%;
+    margin-right: 1%;
+}
+
+.intro_btns li a {
+    text-align: center;
+    padding-top: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    transform: skew(-0.1deg);
+}
+
+.intro_btns li#intro_tour {
+    width: 350px;
+    background: url('/vip/img/main_tour.png') no-repeat center 70%;
+    background-size: 65%;
+}
+
+.intro_btns li#intro_invi {
+    background: url('/vip/img/mi_invi.png') no-repeat center 70%;
+    background-size: 40%;
+}
+
+.intro_btns li#intro_golf {
+    background: url('/vip/img/mi_golf.png') no-repeat center 70%;
+    background-size: 40%;
+}
+
+.intro_btns li#intro_hlth {
+    background: url('/vip/img/mi_health.png') no-repeat center 70%;
+    background-size: 40%;
+}
+
+.intro_btns li#intro_mem {
+    background: url('/vip/img/mi_mem.png') no-repeat center 70%;
+    background-size: 40%;
+}
+
+.intro_btns li#intro_part {
+    background: url('/vip/img/mi_living.png') no-repeat center 70%;
+    background-size: 40%;
+}
+
+.intro_btns li#intro_shop {
+    background: url('/vip/img/mi_shop.png') no-repeat center 70%;
+    background-size: 40%;
+}
+
+.notice_slide_mob {
+    display: none;
+}
+
+section h2 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+section .new_tour,
+section .intro_slide {
+    max-width: 1600px;
+}
+
+section .new_tour ul,
+section .intro_slide ul {
+    padding: 0 0 45px;
+}
+
+section .new_tour li,
+section .intro_slide li {
+    display: block;
+    margin: 0 auto;
+}
+
+section .new_tour li .slide_thumb img,
+section .intro_slide li .slide_thumb img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+section .swiper li .slide_detail {
+    padding: 15px;
+    height: 124px;
+    box-sizing: border-box;
+}
+
+section .swiper li .slide_detail .name {
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+section .swiper li .slide_detail p {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    transform: skew(0.034deg);
+    line-height: 1.35rem;
+    font-size: 17px;
+}
+
+#main_contents .cs_number {
+    text-align: center;
+    padding: 30px auto;
+    transform: skew(-0.1deg);
+}
+
+#main_contents .cs_number #phone_no {
+    font-size: 50px;
+    font-weight: 700;
+    color: #085499;
+    padding: 10px 20px 20px;
+    border-bottom: 1px solid #dedede;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#main_contents .cs_number p {
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+#main_contents .main_sns {
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#main_contents .main_sns ul {
+    display: flex;
+    justify-content: center;
+}
+
+#main_contents .main_sns li {
+    border-radius: 10px;
+    width: 25%;
+    margin-right: 10px;
+}
+
+#main_contents .main_sns li a {
+    width: 100%;
+    border: 1px solid #3a3a3a;
+    border-radius: 30px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#main_contents .main_sns li a img {
+    width: 32px;
+}
+
+#main_contents .main_sns li a span {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: Bold;
+    transform: skew(-0.1deg);
+}
+
+.contents {
+    min-height: 67vh
+}
+
+
+/* 숙박 리스트 */
+
+.sub_contents {
+    padding: 10px 160px 60px;
+}
+
+.list_contents h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.tour_grade {
+    margin: 30px auto;
+    width: 60%
+}
+
+.tour_grade ul {
+    display: flex;
+    justify-content: center;
+}
+
+.tour_grade ul li {
+    width: 25%;
+    border: 1px solid #085499;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 15px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.tour_grade ul li:last-child {
+    margin-right: 0;
+}
+
+.tour_grade ul li.grade_on {
+    background: #085499;
+}
+
+.tour_grade ul li.grade_on a {
+    color: #fff
+}
+
+.tour_grade li a {
+    color: #333;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 15px 0;
+}
+
+.list_wrap ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list_wrap li {
+    box-sizing: border-box;
+    width: 23%;
+    margin-bottom: 30px;
+    list-style: none;
+    cursor: pointer;
+    margin-right: 1%;
+}
+
+.list_wrap li:nth-child(4n) {
+    margin-right: 0
+}
+
+.list_wrap li:hover {
+    background: #f9f9f9;
+    transition: all 300ms
+}
+
+.list_wrap li .tlist_thumb {
+    width: 100%;
+    height: 250px;
+}
+
+.list_wrap li .tlist_thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list_wrap li .tlist_info {
+    padding: 15px;
+}
+
+.list_wrap li .tlist_name {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px
+}
+
+.list_wrap li .tlist_addr {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.list_wrap li .tlist_area {
+    background-color: #eeada7;
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    color: #fff
+}
+
+.tlist_price {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 10px;
+    border-top: 1px solid #dedede;
+    padding-right: 5px;
+}
+
+.tlist_price span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* 시설 상세보기 */
+
+.icons_facil {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.icons_facil li {
+    margin: 0 8px 10px;
+    text-align: center;
+}
+
+.icons_facil li img {
+    width: 100%;
+    width: 35px;
+}
+
+.icons_facil li span {
+    font-size: 15px;
+    display: block;
+}
+
+.tv_room_detail {
+    background: #f9f9f9;
+}
+
+.tv_rm_icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tv_rm_icons li {
+    border: 1px solid #dedede;
+    padding: 5px 7px;
+    border-radius: 5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.tv_rm_icons li img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.tv_rm_icons li span {
+    font-size: 12px;
+}
+
+.view_contents section {
+    margin: 15px 0;
+}
+
+.view_contents .tview_out {
+    width: 100%;
+}
+
+.view_contents .tview_out li {
+    height: 340px;
+}
+
+.view_contents .tview_out li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    ;
+}
+
+.view_contents .tview_main_info h2 {
+    text-align: left;
+}
+
+.tview_main_info {
+    padding: 20px;
+    border: 1px solid #dedede;
+}
+
+.tview_main_info h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.tview_main_info .short_intro {
+    font-size: 18px;
+    color: #818181
+}
+
+.tview_main_info .tv_mtxt {
+    margin: 15px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.view_contents tview_room_wrap .tv_mtxt dl {
+    width: 25%;
+}
+
+.tv_mtxt dl {
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    justify-content: flex-start
+}
+
+.tv_mtxt dl dt {
+    color: #818181;
+    margin-right: 16px;
+}
+
+.tview_rooms {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tview_room_wrap {
+    margin-bottom: 10px;
+    width: 32.5%;
+    margin-right: 10px
+}
+
+.tview_room_wrap .tv_room_thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tview_room_wrap .tv_room_thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tview_room_wrap .tv_mtxt h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.tview_room_wrap .tv_room_info {
+    padding: 18px;
+}
+
+.tview_room_wrap .tv_room_info dl {
+    display: flex;
+}
+
+.tview_room_wrap .tv_room_price {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.tview_room_wrap .tv_room_price span {
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 3px;
+}
+
+.btn_room_detail {
+    width: 100%;
+    margin: 10px auto;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.btn_room_detail.btn_on {
+    background: #085499;
+    color: #fff;
+    border: none;
+}
+
+.tv_rm_img li .tv_room_img {
+    width: 100%;
+    height: 100%;
+}
+
+.tv_rm_img li img {
+    width: 100%
+}
+
+.tv_rm_dt_txt {
+    padding: 20px
+}
+
+.tv_rm_dt_txt .tv_rm_icons {
+    margin-bottom: 10px;
+}
+
+.tv_rm_dt_txt .tv_rm_icons li {
+    background-color: #fff;
+}
+
+.tv_rm_date .date_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tv_rm_date .date_box label {
+    font-size: 15px;
+    min-width: 10%
+}
+
+.tv_rm_date .date_box input {
+    width: 80%;
+    height: 35px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer
+}
+
+.slct_coupon {
+    width: 100%;
+    height: 35px;
+    margin: 5px 0 10px;
+    border: 1px solid #dedede;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #333
+}
+
+.slct_coupon select {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.tv_rm_dt_txt .tv_extra h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.tv_rm_dt_txt .tv_extra h3 span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tv_rm_dt_txt .tv_extra p {
+    font-size: 16px;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.tv_rm_dt_txt #tvextra_price {
+    margin-top: 5px
+}
+
+.tv_rm_dt_txt #tvextra_price dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 15px;
+}
+
+.tv_rm_dt_txt #tvextra_price dl dt {
+    margin-right: 15px;
+}
+
+.tv_rm_dt_txt #tvextra_price dl dd {
+    color: #085499;
+    font-weight: 500;
+}
+
+.tv_room_detail .btn_book {
+    margin: 0 auto 20px;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.view_contents .tv_room_detail {
+    position: absolute;
+    width: 700px;
+    display: block;
+    top: 33%;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -350px;
+    z-index: 88;
+    box-shadow: 5px 5px 1000px 8000px rgb(0, 0, 0, .5);
+}
+
+.view_contents .tv_room_detail .btn-web_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border: None;
+    background: #333;
+    border-radius: 10px;
+}
+
+.view_contents .tv_room_detail .btn-web_close span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.view_contents .ui-widget.ui-widget-content {
+    width: 600px;
+}
+
+.tv_tbl_price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tv_tbl_price table {
+    width: 49%;
+    font-weight: 500;
+    margin-bottom: 15px
+}
+
+.tv_tbl_price table caption {
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.tv_tbl_price table th {
+    color: #818181;
+}
+
+.tv_tbl_price table th,
+.tv_tbl_price table td {
+    border: 1px solid #dedede;
+    font-size: 15px;
+    padding: 7px 5px;
+    vertical-align: middle;
+}
+
+.tv_facil li {
+    position: relative;
+    height: 280px;
+}
+
+.tv_facil li span {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.tv_facil li img {
+    width: 100%;
+    border-radius: 5px;
+    height: 86%
+}
+
+.tv_sight ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tv_sight li {
+    width: 24.5%;
+    margin-bottom: 2%
+}
+
+.tv_sight li span {
+    text-align: center;
+    display: block;
+}
+
+.tv_sight li img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tv_notice {
+    padding: 15px;
+    line-height: 21px;
+}
+
+
+/* 예약확인&결제 */
+
+.confirm_contents {
+    padding: 10px 240px 60px
+}
+
+.confirm_info .cf_thumb {
+    width: 30%;
+    max-height: 220px;
+}
+
+.confirm_info .cf_thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.confirm_contents .cf_txt {
+    padding: 10px 0 10px 30px;
+    width: 70%;
+}
+
+.confirm_contents section {
+    margin: 15px 0 30px;
+}
+
+.confirm_contents section .shadow_box {
+    padding: 20px;
+}
+
+.confirm_contents section h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.confirm_contents .confirm_info {
+    display: flex;
+}
+
+.confirm_contents .tv_mtxt dl {
+    font-size: 17px;
+    line-height: 25px;
+    flex-wrap: wrap;
+}
+
+.confirm_contents .tv_mtxt dl dt {
+    min-width: 7%
+}
+
+
+/*.confirm_contents */
+
+.confirm_user dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+/*.confirm_contents */
+
+.confirm_user dl dt {
+    width: 14%;
+}
+
+
+/*.confirm_contents */
+
+.confirm_user dl:last-child {
+    margin-bottom: 0;
+}
+
+
+/*.confirm_contents */
+
+.confirm_user label {
+    color: #818181;
+    font-size: 16px;
+}
+
+
+/*.confirm_contents */
+
+.confirm_user dd {
+    width: 85%
+}
+
+
+/*.confirm_contents */
+
+.confirm_user input,
+.confirm_user select {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dedede;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.confirm_tnc .cf_tnc_agree {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.confirm_tnc .cf_tnc_txt {
+    font-size: 16px;
+    padding: 15px 10px 10px;
+    line-height: 1.2rem;
+}
+
+.confirm_tnc .cf_tnc_agree label {
+    cursor: pointer;
+}
+
+.confrim_pay .cf_pay_way {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 10px;
+}
+
+.confrim_pay .cf_pay_way label {
+    cursor: pointer;
+}
+
+.confrim_pay .cf_pay_way .pay_way_box {
+    line-height: 25px;
+    font-size: 16px;
+    margin-right: 15px
+}
+
+.confrim_pay .confrim_price div {
+    text-align: right;
+}
+
+.confrim_pay .confrim_price span {
+    font-size: 35px;
+    font-weight: 600;
+    padding-right: 5px
+}
+
+
+/* 수기결제 팝업 */
+
+.popup_admin {
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.popup_admin .input_box {
+    margin: 0 10px 20px
+}
+
+
+/* 
+.list_contents,
+.complete_contents,
+.view_contents,
+.mypage_contents {
+    transform: skew(-0.05deg);
+} */
+
+
+/* payment약관동의 체크박스 */
+
+.confirm_tnc label {
+    position: unset
+}
+
+.confirm_tnc input[type="checkbox"]:checked,
+.confirm_tnc input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.confirm_tnc input[type="checkbox"]:checked+label,
+.confirm_tnc input[type="checkbox"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #3a3a3a;
+    left: 0px;
+}
+
+.confirm_tnc input[type="checkbox"]:checked+label:before,
+.confirm_tnc input[type="checkbox"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #3a3a3a;
+    background: #fff;
+}
+
+.confirm_tnc input[type="checkbox"]:checked+label:after,
+.confirm_tnc input[type="checkbox"]:not(:checked)+label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #085499;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.confirm_tnc input[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.confirm_tnc input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.confirm_tnc {
+    padding: 1.5% 10%
+}
+
+.confirm_tnc div {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.confirm_tnc div label[for="agree_all"] {
+    font-weight: 600;
+    color: #3a3a3a
+}
+
+
+/* 결제수단 라디오 */
+
+.confrim_pay .pay_way_box {
+    position: relative;
+    display: inline-block
+}
+
+.confrim_pay label {
+    position: UNSET;
+    padding-left: 25px;
+    color: #3a3a3a;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.06em;
+}
+
+.confrim_pay .radio_check {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 5px;
+    left: 0;
+    border: 1px solid #3a3a3a;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.confrim_pay .radio_check:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    transition: all 0.25s;
+}
+
+.confrim_pay input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 23px;
+    margin: 0;
+}
+
+.confrim_pay input[type="radio"]:checked~.radio_check {
+    border: 1px solid #3a3a3a;
+}
+
+.confrim_pay input[type="radio"]:checked~.radio_check:before {
+    background: #085499;
+}
+
+.confrim_pay input[type="radio"]:checked~label {
+    color: #3a3a3a;
+}
+
+
+/* 예약 완료 */
+
+.complete_contents {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.complete_contents .check_anime {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.complete_contents .check_anime svg {
+    width: 150px;
+    height: 150px;
+}
+
+.cmplt_title {
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.complete_contents h2 {
+    text-align: center;
+}
+
+.complete_contents .cmplt_txt {
+    width: 73%;
+    margin: 15px auto 30px;
+}
+
+.complete_contents .tv_mtxt dl {
+    font-size: 16px;
+    line-height: 1.8rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.complete_contents .tv_mtxt dl dt {
+    width: unset;
+}
+
+.complete_contents {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.complete_contents section {
+    margin-bottom: 30px;
+}
+
+
+/* 마이페이지 */
+
+.mypage_contents {
+    padding-top: 15px;
+}
+
+.mypage_contents .shadow_box {
+    margin-top: 15px;
+}
+
+.mypage_contents .mem_infoCard {
+    display: flex;
+}
+
+.mypage_contents .mem_info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage_contents .mem_info h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mypage_contents .mem_info h3 span {
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.mypage_contents .mem_info h3 .mem_phone {
+    color: #818181;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.mypage_contents .mycard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mypage_contents .mycard .shadow_box {
+    height: fit-content
+}
+
+.mypage_contents .mycard {
+    box-sizing: border-box;
+}
+
+.mypage_contents .mycard .swiper-slide .card-wrap {
+    padding: 30px 50px 50px;
+    transition: all 200ms
+}
+
+.mypage_contents .mycard .swiper-slide .card-wrap:hover {
+    background: #dedede;
+    border-radius: 12px;
+}
+
+.mypage_contents .mycard .swiper-slide .card-wrap:focus {
+    background: #dedede;
+    border-radius: 12px;
+}
+
+.mypage_contents .mycard li {
+    cursor: pointer;
+}
+
+.mypage_contents .mycard li img {
+    width: 420px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.mypage_contents .mycard li .menu-btn-next {
+    width: 420px;
+    margin: 0 auto;
+    transform: skew(0deg);
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage_contents .mycard .swiper-pagination-bullet {
+    background: #818181
+}
+
+.mypage_contents .mp_list {
+    margin: 15px 0;
+}
+
+.mypage_contents .mp_list li {
+    cursor: pointer;
+    font-weight: 500;
+    padding-left: 30px;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 100ms;
+    transform: skew(-0.1deg);
+}
+
+.mypage_contents .mp_list li:hover {
+    background: #dedede
+}
+
+.mypage_contents .mycard .card-info-wrap {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mypage_contents .mp_list li:last-child {
+    border: none;
+}
+
+.mypage_contents .mp_list li span,
+.mypage_contents .mp_list li img {
+    padding-right: 10px;
+    color: #3a3a3a;
+    vertical-align: middle;
+}
+
+.mypage_contents .mp_list li .arrow_forward {
+    color: #818181;
+    font-size: 20px;
+}
+
+.mypage_contents h2 {
+    text-align: center;
+}
+
+.mypage_contents h2 img {
+    width: 60%;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 6px #dedede;
+}
+
+
+/* 카드 상세 페이지 */
+
+.card-info-wrap {
+    margin: 15px 0
+}
+
+.card-info-wrap .shadow_box {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card-info-wrap .card_list .card-info-grade {
+    padding: 5px 10px;
+    background-color: #eeada7;
+    color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.card-info-wrap .card_list h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card-info-wrap .card_list h4 .card-exp {
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-info-wrap .card_list dl dt {
+    color: #818181;
+    padding-right: 10px
+}
+
+.card-info-wrap .card_list .card-detail table {
+    border: 1px solid #dedede;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-info-wrap .card_list .card-detail table caption {
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px;
+    border-top: 1px solid #3a3a3a;
+}
+
+.card-info-wrap .card_list .card-detail table th {
+    font-weight: 500;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+.card-info-wrap .card_list .card-detail table td,
+.card-info-wrap .card_list .card-detail table th {
+    padding: 7px 10px;
+    border: 1px solid #dedede;
+}
+
+.card-info-wrap .card_list .card-detail table .cd-det-used td {
+    color: #818181
+}
+
+.card-info-wrap .card_list .card-detail table .cd-det-ava td {
+    font-weight: 600
+}
+
+
+/* 예약/결제내역 */
+
+.mp_list_wrap .mp-li-date {
+    padding: 15px;
+    border-bottom: 1px solid #dedede;
+    transition: 200ms;
+}
+
+.mp_list_wrap .mp-li-date:hover {
+    background-color: #dedede;
+}
+
+.mp_list_wrap .mp-li-date .mp-li-status {
+    float: right;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.mp_list_wrap .mp-li-status .material-symbols-rounded {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.mp_list_wrap li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mp_list_wrap li .mp-li-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.mp_list_wrap li .mp-li-price {
+    padding: 15px;
+    border-top: 1px solid #dedede;
+    text-align: right;
+}
+
+.mp_list_wrap li .mp-li-price span {
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 3px
+}
+
+.mp_list_wrap .mp-li-info {
+    margin-left: 30px;
+}
+
+.mp_list_wrap .mp-li-info h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.mp_list_wrap .mp-li-info dl dt {
+    color: #818181
+}
+
+.mp_list_wrap .mp-li-thumb {
+    width: 200px;
+    height: 120px
+}
+
+.mp_list_wrap .mp-li-thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.rsv_det_box {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.rsv_det_box h2 {
+    text-align: left;
+    font-size: 22px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.rsv_det_box .tv_mtxt dl {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.rsv_det_box .btn-red {
+    border: 1px solid #085499;
+    border-radius: 6px;
+    padding: 2px 10px;
+    margin-left: 15px
+}
+
+.rsv_det_box .btn-white {
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 2px 10px;
+}
+
+.mp_list_wrap.pay_history .mp-li-info {
+    margin-left: 0
+}
+
+
+/* 비밀번호 변경 */
+
+.pw_wrap {
+    padding: 30px;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 7% auto
+}
+
+.pw_wrap dl {
+    padding: 10px 0 20px
+}
+
+.pw_wrap dl dt {
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500
+}
+
+.pw_wrap dl dd {
+    border: 1px solid #085499;
+    padding: 4px 16px;
+    border-radius: 22px;
+}
+
+.pw_wrap dl dd input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 36px;
+    line-height: 36px;
+    border: none
+}
+
+.pw_wrap dl dd input:fo .pw_wrap dl label[for='prev_pass'] {
+    color: #818181
+}
+
+.pw_wrap .main_btnArea {
+    margin-top: 10px;
+}
+
+
+/* 쇼핑 */
+
+.list_contents .shop_list .shoView_price .bf_dc {
+    font-size: 20px
+}
+
+.list_contents .shop_list .shoView_price .dc_rate {
+    font-size: 23px;
+    float: right
+}
+
+.list_contents .shop_list .shoView_price .dc_rate span {
+    vertical-align: middle;
+    font-size: 18px
+}
+
+.list_contents .shop_list .shoView_price .aft_dc {
+    clear: both;
+    font-size: 25px;
+    margin-top: 10px
+}
+
+#shop_contents {
+    padding: 10px 320px 60px
+}
+
+#shop_contents .shoView_title {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.shoView_title h2 {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.shoView_title .shopView_thumb {
+    width: 49%;
+    margin-right: 2%;
+}
+
+.shoView_title .shopView_thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shoView_title .tview_main_info {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 30px
+}
+
+.shoView_price .bf_dc {
+    text-decoration: line-through;
+    color: #818181;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.shoView_price p {
+    display: inline-block;
+}
+
+.shoView_price .dc_rate {
+    font-size: 32px;
+    margin-left: 15px;
+    font-weight: 600;
+    color: #df0d0d
+}
+
+.shoView_price .dc_rate span {
+    font-size: 32px;
+    vertical-align: bottom;
+    color: #df0d0d
+}
+
+.shoView_price .aft_dc {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.shoView_title .tview_main_info {
+    position: relative;
+}
+
+.shoView_title .main_btnArea {
+    position: absolute;
+    width: 90%;
+    bottom: 30px;
+}
+
+.shoView_detail img {
+    width: unset;
+    display: block;
+    margin: 0 auto;
+}
+
+.tview_main_info .shopView_opt dl {
+    justify-content: space-between;
+}
+
+.tview_main_info .shopView_opt {
+    display: block;
+    padding: 0 10px;
+    position: absolute;
+    width: 85%;
+    bottom: 80px;
+}
+
+.shopView_opt dl {
+    font-size: 20px;
+    line-height: 1.8rem;
+    margin-bottom: 15px
+}
+
+.shopView_opt dl select {
+    width: 80px;
+    height: 33px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    border:1px solid #818181;
+    border-radius: 6px;
+}
+
+.list_contents .shoView_price {
+    margin-top: 10px;
+    padding: 7px 0 10px;
+    text-align: left;
+}
+
+.list_contents .shoView_price .aft_dc {
+    font-size: 24px
+}
+
+.shop_confirm {
+    justify-content: flex-start;
+}
+
+.shop_confirm.confirm_info .cf_thumb {
+    width: unset
+}
+
+.confirm_user .pscode_box #postcode {
+    width: 79%;
+    margin-right: 1%;
+}
+
+.confirm_user .pscode_box #btn-postcode {
+    width: 20%;
+}
+
+.confirm_user .pscode_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.confirm_user .pscode_box input {
+    margin-bottom: 5px;
+}
+
+.confirm_info .shop_cf_thumb {
+    overflow: hidden;
+    text-align: center;
+}
+
+.confirm_info .shop_cf_thumb img {
+    width: 150px;
+    /* height: 120px; */
+    object-fit: cover;
+}
+
+.list_contents .golf_grade li {
+    width: 50%
+}
+
+.gf_rsv_wrap {
+    padding: 30px;
+}
+
+.gf_rsv_wrap .date_box {
+    margin-bottom: 15px;
+}
+
+.gf_rsv_wrap .tv_tbl_price {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.gf_rsv_wrap .tv_tbl_price table {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+
+/*멤버십 헬스 리스트*/
+
+.mbship_list {
+    margin: 10px 0 30px
+}
+
+.mbship_list li:hover {
+    box-shadow: inset 0px 0px 50px 30px rgb(0, 0, 0, .1);
+}
+
+.mbship_list li {
+    transition: box-shadow 3s ease
+}
+
+s #heath_contents .tlist li {
+    width: 32.3%
+}
+
+.mbship_list li#hlth_dna {
+    background-image: url("http://img.gmidas.com/julgigobaseimg/mobile/images/main/health_li_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mbship_list li#hlth_exam {
+    background-image: url("http://img.gmidas.com/julgigobaseimg/mobile/images/main/health_li_02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mbship_list li .btn-mbsList {
+    transition: all 200ms
+}
+
+.mbship_list li .btn-mbsList:hover {
+    background: #3a3a3a
+}
+
+.mbship_contents .mbship_btnArea {
+    margin: 15px auto
+}
+
+#btn_health {
+    display: block;
+    width: 80%;
+    height: 60px;
+    line-height: 60px;
+    margin: 30px auto;
+    background: #ff5472;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    text-align: Center;
+    font-size: 22px;
+    border: 1px solid #ff5472;
+    transition: all 200ms
+}
+
+#btn_health:hover {
+    background: #fff;
+    border: 1px solid #ff5472;
+    color: #ff5472
+}
+
+.mbship_list #partner_01 {
+    background: url(http://img.gmidas.com/julgigobaseimg/vip/images/gaon_bg.jpg) no-repeat;
+}
+
+.mbship_list #partner_02 {
+    background: url(http://img.gmidas.com/julgigobaseimg/vip/images/rentner_bg.png) no-repeat;
+}
+
+.mbship_list #partner_03 {
+    background: url('http://img.gmidas.com/product/onpictures/onp_bg.png') no-repeat;
+}
+
+.mbship_list #partner_04 {
+    background: url('http://img.gmidas.com/product/seoulmedical/seoulmedi_bg.png') no-repeat;
+}
+
+.mbship_list #partner_05 {
+    background: url('http://img.gmidas.com/product/tonginexp/toin_title.jpg') no-repeat;
+}
+
+.mbship_list #partner_06 {
+    background: url('http://img.gmidas.com/product/kkday/kkday_bg.jpg') no-repeat;
+}
+
+.mbship_list #partner_07 {
+    background: url('http://img.gmidas.com/product/kkday/kkday_bg.jpg') no-repeat;
+}
+
+.mbship_contents .shadow_box {
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.mbship_contents .TitleArea {
+    text-align: center;
+}
+
+.mbship_contents .TitleArea img {
+    display: block;
+    margin: 5px auto 5px
+}
+
+#onPictures .age-check {
+    display: inline-block;
+    width: 32%;
+}
+
+#onPictures .age-check label {
+    vertical-align: super;
+}
+
+#onPictures .age-check input {
+    width: 20px;
+    height: 20px;
+}
+
+#onPictures .shadow_box img {
+    width: 100%;
+}
+
+#onPictures .shadow_box #onp_ticket {
+    width: 70%;
+}
+
+
+/* 렌트너 */
+
+#rentner .confirm_tnc div {
+    display: block;
+}
+
+.mbship_contents .tc_title {
+    font-weight: 500;
+    text-indent: 15px;
+}
+
+.tc_txt {
+    padding: 20px;
+    border: 1px solid #dedede;
+    width: 100%
+}
+
+.btn_tcTxt {
+    margin-left: 10px;
+    border-radius: 6px;
+}
+/* 모바일쿠폰 */
+.tubebox .tube_imgs {width:550px; margin: 0 auto; display: flex;flex-wrap: wrap; justify-content: space-evenly;}
+.tubebox .tube_imgs img {
+    width:250px;
+
+}
+.tubebox .tube_txt {
+    padding: 30px;
+}
+.tube_txt h4 {font-size:25px; margin-bottom:10px}
+.tubebox .tube_txt li {line-height:30PX}
+.tubebox .tube_txt li span {font-size:22px; font-weight: 600; padding-right:10px;;}
+.tubebox a {display: inline-block;line-height: 40px; text-align: center;}
+/* 서울메디컬 */
+
+#seoulmedical .seoulmedi_ex img {
+    height: 700px;
+}
+
+#seoulmedical h3 {
+    font-size: 30px;
+    margin-top: 10px
+}
+
+#seoulmedical .shadow_box {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.seoulmedi_howto ol {
+    list-style: none;
+    margin-left: 1em;
+    counter-reset: line;
+}
+
+.seoulmedi_howto li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.seoulmedi_howto li::before {
+    position: absolute;
+    left: -1.8em;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 0.5em;
+    background-color: #085499;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    counter-increment: line;
+    content: counter(line);
+    box-sizing: border-box;
+    padding-top: 3px;
+}
+
+.seoulmedi_howto .howto_tit {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.seoulmedi_howto .howto_txt span {
+    display: block;
+    margin: 4px 0
+}
+
+.seoulmedi_howto .howto_txt span a {
+    background-color: #eeada7;
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.seoulmedi_bene a {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #eeada7
+}
+
+.seoulmed_txt {
+    text-align: center;
+}
+
+.seoulmed_txt2 {
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+.seoulmedi_bene li span {
+    font-weight: 900;
+    color: #085499;
+    margin-right: 20px;
+}
+
+.seoulmedi_bene li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px
+}
+
+.seoulmedi_bene li:last-child {
+    border: none;
+}
+
+.seoulmedi_new ul li {
+    text-align: Center;
+    line-height: 22px
+}
+
+.seoulmedi_new dl {
+    border: 1px solid #ddd
+}
+
+.seoulmedi_new dl dt,
+.seoulmedi_new dl dd {
+    padding: 10px;
+    text-align: left;
+}
+
+.seoulmedi_new dl dt {
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+/*스파 가격 */
+
+.spa_price {
+    padding-bottom: 10px
+}
+
+.spa_price dd {
+    margin-top: -5px;
+}
+
+.spa_price dd .spa-aft_price {
+    display: block;
+    font-size: 18px
+}
+
+.spa_price dd .spa-aft_price strong {
+    font-size: 25px;
+    vertical-align: bottom;
+    font-weight: 600;
+    margin-right: 3px;
+    color: #df0d0d
+}
+
+.spa_price dd .spa-bf_price {
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.spa_price dd .material-symbols-rounded {
+    vertical-align: text-bottom;
+    font-size: 20px;
+}
+
+.spa_price dd .material-symbols-rounded,
+.spa_price dd .spa-bf_price {
+    display: inline-block;
+}
+
+.spa_num dd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spa_num dd select {
+    width: 49.5%;
+}
+
+
+/* 멤버십 리스트- wide ver.*/
+
+.mbship_list li {
+    width: 49%;
+    margin: 0 1% 1% 0;
+    height: 300px;
+}
+
+.mbship_list li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.mbship_list li .mbs-list_tit {
+    font-size: 30px
+}
+
+.mbship_list li .mbs-list_txt {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+#ti_how {
+    padding: 50px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+/*footer */
+
+footer .address_wrap {
+    padding: 0 160px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .address_wrap dl {
+    width: 50%;
+    display: flex;
+}
+
+footer .foot_links {
+    justify-content: space-evenly;
+    padding: 0 160px
+}
+
+footer .foot_links li {
+    width: unset;
+}
+
+footer .foot_terms {
+    padding: 10px 160px 0;
+    height: Auto;
+    width: 100%;
+}
+
+footer .foot_logo {
+    padding: 0 160px 15px
+}
+
+@media screen and (max-width: 1600px) {
+    .tour_grade {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    header#header-pc {
+        display: none;
+    }
+    .header-mob {
+        display: flex;
+        padding: 0 10px;
+    }
+    .header-mob .btn_menu {
+        cursor: pointer
+    }
+    header .menu .btn_menuClose .material-symbols-rounded {
+        font-size: 45px;
+    }
+    header .menu .user_info #user_name {
+        font-size: 30px;
+        font-weight: 700;
+        margin-right: 5px;
+    }
+    .header-mob .menu .user_info {
+        height: 60px;
+        line-height: 60px;
+        font-size: 22px;
+    }
+    .header-mob .gnb-mobile,
+    .header-mob .lnb {
+        padding: 30px 15px;
+        border-bottom: 1px solid #dedede;
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .header-mob .gnb-mobile>li {
+        font-weight: 500;
+        cursor: pointer
+    }
+    .header-mob .gnb-mobile .gnb_sub-mob {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+        justify-content: flex-start;
+        padding: 0 15px 15px;
+        line-height: 25px;
+    }
+    .header-mob .gnb-mobile .gnb_sub-mob li {
+        width: 20%;
+        cursor: pointer
+    }
+    .header-mob .gnb-mobile .gnb_sub-mob li a {
+        font-weight: 400;
+        color: #818181;
+    }
+    .header-mob h1 {
+        margin-left: 15px;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    .header-mob .menu .gnb-mobile>.mob_gnb_on {
+        color: #085499
+    }
+    .header-mob .lnb {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header-mob .lnb li {
+        width: 50%;
+    }
+    .sub_contents {
+        padding: 10px 30px 60px
+    }
+    header .search_modal #srch_box_btn img {
+        width: fit-content
+    }
+    header .search_modal #srch_box_name {
+        width: 92%
+    }
+    header .search_modal #srch_box_btn {
+        width: 5%
+    }
+    #shop_contents {
+        padding:10px 160px 60px
+    }
+}

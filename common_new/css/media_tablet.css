@@ -1,0 +1,129 @@
+@media (max-width:1024px) {
+    html {overflow-x: hidden;}
+    .contents {min-height:100vw}
+    .contents .msld_pc {height: auto;}
+    header#header-pc {display: none;}
+    .header-mob {display: flex; padding: 0 10px;}
+    
+    header .right-header .btn_user {
+        background-size: 90%;
+    }
+    header .menu .btn_menuClose .material-symbols-rounded {
+        font-size: 6vw;
+    }
+    header .menu .user_info {font-size:22px;}
+    header .menu .user_info #user_name {font-size:5vw;}
+    .header-mob .menu .gnb {
+        padding: 20px 20px 20px 10px;
+    }
+    .header-mob .menu .gnb>li {font-size:25px;line-height: 36px;}
+    .header-mob .menu .gnb>li:first-child {margin-top:0;}
+    .header-mob .menu .gnb .gnb-tour_grade li {font-size:20px;}
+    .header-mob .menu .gnb .gnb-tour_grade {display: flex;justify-content: space-between;margin:10px 0 15px;}
+    .header-mob .lnb {
+        font-size: 20px; line-height:32px;
+        display: flex; flex-wrap: wrap;
+    }
+    .header-mob .lnb li {width:50%;}
+    .header-mob .menu_sns {font-size:20px;line-height: 32px;}
+    .quick_menu {
+        display: block;
+    }
+    .quick_menu ul li img {vertical-align: bottom;}
+
+    header .search_modal #srch_box_name {width:92%}
+    header .search_modal #srch_box_btn {width:4.5%}
+    header .menu .btn_menuClose {right:8px}
+     
+    #main_contents h2 {text-align: center;}
+    #main_contents section {padding: 0 15px; margin:50px auto;}
+    #main_contents .mslide_wrap {padding:0}
+    
+    .search_bar {width:90%}
+
+    .intro_btns {padding:0 30px;}
+    .intro_btns li {width:150px; height:150px;}
+
+    #main_contents .cs_number #phone_no {font-size:40px;}
+    .quick_menu ul li a img {width:20%;}
+    .quick_menu ul #qck_home {margin-top:-15px;}
+    .quick_menu ul #qck_home img {width:40%;}
+    
+    .complete_contents {width:80%;}
+
+    #shop_contents {padding:10px 15px; box-sizing: border-box;}
+    /* #shop_contents .shoView_title {display: block;} */
+    #shop_contents .shoView_title {height:380px;}
+
+    .mypage_contents .mem_info {margin-bottom:15px;}
+
+   
+
+    footer .foot_links {
+        padding: 0
+    }
+    footer .foot_links {
+        border-bottom: 1px solid #dedede
+    }
+    footer .foot_terms {
+        padding:10px 30px; box-sizing: border-box;
+    }
+    footer .address_wrap {display: block; padding:0 30px}
+    footer .address_wrap dl {width:100%;}
+    footer .foot_logo {padding: 0 30px 15px;}
+
+
+    .sub_contents {padding:10px 15px 30px;}
+
+    .tour_grade {margin:15px auto; width:100%;}
+
+    .list_wrap li {
+        width: 48%; margin-bottom:15px;margin-right:2%
+    }
+    .list_wrap li:nth-child(2n) {margin-right:0}
+    .confirm_contents {padding:10px 45px 30px}
+    .mbship_contents {
+        padding-bottom: 15px
+    }
+
+    .mbship_contents .mbship_img img {
+        width: 100%;
+    }
+
+}
+@media (max-width:769px) {
+header .search_modal #srch_box_btn {
+    width: 6%
+} 
+.header-mob .gnb-mobile .gnb_sub-mob li {width:33%;}
+ .tv_tbl_price table {
+     width: 100%;
+ }
+.tview_room_wrap {width:48.2%}
+.view_contents .tv_mtxt dl {width:50%;}
+.tview_main_info .tv_mtxt {width:100%}
+.quick_menu ul li img {
+    vertical-align: middle;
+}
+
+.mypage_contents .mycard .swiper-slide .card-wrap {
+    padding: 30px
+}
+.tview_main_info .shopView_opt {position:unset; box-sizing: border-box;}
+.view_contents .shopView_opt dl {
+    width: 100%
+}
+.shoView_price .dc_rate {
+    font-size:26px; margin-bottom:10px;
+}
+
+.view_contents .tv_mtxt dl {margin-bottom:5px;}
+.confirm_contents {padding:10px 15px 30px}
+.confirm_user .pscode_box #postcode {width:70%}
+.confirm_user .pscode_box #btn-postcode {width:29%}
+
+.mbship_contents img {max-width: 99%;}
+.pw_wrap {
+    width:80%;
+}
+}
