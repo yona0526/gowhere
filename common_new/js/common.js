@@ -36,11 +36,11 @@ $(document).ready(function() {
     });
 
     $("h1").click(function() {
-        window.location.href = '/vip/';
+        window.location.href = '/gowhere/';
     });
 
     $(".btn_user").click(function() {
-        window.location.href = '/vip/mypage/index.php';
+        window.location.href = '/gowhere/mypage/index.html';
     });
 
 
