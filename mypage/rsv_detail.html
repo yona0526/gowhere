@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>어디갈래 NEW MOBILE</title>
+  <link rel="stylesheet" type="text/css" href="../common_new/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../common_new/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="../common_new/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../common_new/css/media_pc.css" />
+  <link rel="stylesheet" type="text/css" href="../common_new/css/media_tablet.css" />
+  <link rel="stylesheet" type="text/css" href="../common_new/css/media_mob.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="../common_new/js/jquery-2.2.4.min.js"></script>
+  <script src="../common_new/js/common.js"></script>  
+</head>
+<body>
+  <header id="header-pc">
+    <h1>
+      <img src="http://img.gmidas.com/julgigobaseimg/vip/images/logo.png" alt="즐기고VIP 로고"><span class="site_grade">VIP</span>
+    </h1>
+    <ul class="gnb-pc">
+      <li><a href="/vip/tour/list.php">숙박</a>
+        <ul class="gnb_sub">
+          <li><a href="/vip/tour/list.php">FAMILY</a></li>
+          <li><a href="/vip/tour/list.php">>VIP</a></li>
+          <li><a href="/vip/tour/list.php">SVIP</a></li>
+          <li><a href="/vip/tour/list.php">할인숙박</a></li>
+        </ul>
+      </li>
+  
+      <li><a href="/vip/invitation/list.php">초대</a>
+        <ul class="gnb_sub">
+          <li><a href="/vip/invitation/list.php">문화초대</a></li>
+          <li><a href="/vip/leisure/list.php">레저</a></li>
+          <li><a href="/vip/surfing/list.php">서핑</a></li>
+        </ul>
+      </li>
+      <li><a href="/vip/golf/list.php">골프</a>
+        <ul class="gnb_sub">
+          <li><a href="/vip/golf/list.php">일반</a></li>
+          <li><a href="/vip/golf/list.php">프리미엄</a></li>
+        </ul>
+      </li>
+  
+      <li><a href="/vip/health/list.php">헬스케어</a>
+        <ul class="gnb_sub">
+          <li><a href="/vip/health/dna.php">유전자검사</a></li>
+          <li><a href="/vip/health/exam.php">건강검진</a></li>
+        </ul>
+      </li>
+      <li><a href="#">멤버십</a>
+        <ul class="gnb_sub">
+          <li><a href="https://julgigo.intouchtour.com/" target="_blank">제주여행 인터치투어</a></li>
+          <li><a href="/vip/membership/tubebox.php">모바일할인쿠폰</a></li>
+          <li><a href="/vip/spa/list.php">스파</a></li>
+          <li><a href="">공연</a></li>
+          <li><a href="/vip/leisure/list.php">레저</a></li>
+          <li><a href="/vip/flower/list.php">꽃배달</a></li>
+          <li><a href="https://gmidas.hanatour.com/" target="_blank">하나투어</a></li>
+          <li><a href="/vip/membership/skyeye.php">안과</a></li>
+          <li><a href="https://julgigo.intouchtour.com/rent/list.php" target="_blank"> 제주 렌트카</a></li>
+          <li><a href=" #">신차구입</a></li>
+          <li><a href="/vip/membership/car_insurance.php">자동차보험</a></li>
+        </ul>
+      </li>
+      <li><a href="#">리빙</a></li>
+      <li><a href="/vip/mall/list.php">제휴</a>
+        <ul class="gnb_sub">
+          <li><a href="/vip/shopping/list.php">즐기고몰</a></li>
+          <li><a href="/vip/mall/rentner.php">장기렌트카</a></li>
+          <li><a href="/vip/mall/onpictures.php">온픽쳐스 가족사진</a></li>
+          <li><a href="#">서울메디컬 의료제휴</a></li>
+          <li><a href="#">통인 익스프레스</a></li>
+          <li><a href="/vip/mall/kkday.php">kk데이</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="lnb">
+      <li class="btn_user"></li>
+      <li><span class="material-symbols-rounded">logout</span></li>
+    </ul>
+  
+  </header>
+  
+  <header class="header-sub header-mob">
+    <div class="left-header">
+      <a href="javascript:history.back()" class="head-btn_back">
+        <span class="material-symbols-rounded">arrow_back_ios</span>
+      </a>
+      <h1>결제 완료</h1>
+    </div>
+    <div class="right-header">
+      <div class="btn_srch"></div>
+      <div class="btn_user" onclick="location.href='/mypage/index.php'"></div>
+  
+    </div>
+    <div class="search_modal">
+      <div class="srch_box" id="srch_box_type">
+        <select>
+          <option>유형</option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+      <div class="srch_box" id="srch_box_area">
+        <select>
+          <option>지역</option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+      <div class="srch_box" id="srch_box_name">
+        <input type="text" id="srch_name" name="srch_name" />
+      </div>
+      <button id="srch_box_btn">
+        <img src="/img/ico_srch.png" alt="검색" />
+      </button>
+    </div>
+  
+  
+    <div class="menu">
+  
+      <div class="btn_menuClose"><span class="material-symbols-rounded">close</span></div>
+  
+      <div class="user_info">
+        <span id="user_name">김연아</span>님 환영합니다.
+      </div>
+      <ul class="gnb-mobile">
+        <li>숙박
+          <ul class="gnb_sub-mob">
+            <li><a href="/vip/tour/list.php">FAMILY</a></li>
+            <li><a href="/vip/tour/list.php">VIP</a></li>
+            <li><a href="">SVIP</a></li>
+            <li><a href="/vip/tour/list.php">할인숙박</a></li>
+          </ul>
+        </li>
+  
+        <li>초대
+          <ul class="gnb_sub-mob">
+            <li><a href="/vip/invitation/list.php">초대</a></li>
+            <li><a href="/vip/leisure/list.php">레저</a></li>
+            <li><a href="/vip/surfing/list.php">서핑</a></li>
+          </ul>
+        </li>
+        <li>골프
+          <ul class="gnb_sub-mob">
+            <li><a href="/vip/golf/list.php">일반</a></li>
+            <li><a href="/vip/golf/list.php">프리미엄</a></li>
+          </ul>
+        </li>
+  
+        <li>헬스케어
+          <ul class="gnb_sub-mob">
+            <li><a href="/vip/health/dna.php">유전자검사</a></li>
+            <li><a href="/vip/health/exam.php">건강검진</a></li>
+          </ul>
+        </li>
+        <li>멤버십
+          <ul class="gnb_sub-mob">
+            <li><a href="https://julgigo.intouchtour.com/" target="_blank">제주여행 인터치투어</a></li>
+            <li><a href="/vip/membership/tubebox.php">모바일할인쿠폰</a></li>
+            <li><a href="/vip/spa/list.php">스파</a></li>
+            <li><a href="">공연</a></li>
+            <li><a href="/vip/leisure/list.php">레저</a></li>
+            <li><a href="/vip/flower/list.php">꽃배달</a></li>
+            <li><a href="https://gmidas.hanatour.com/" target="_blank">하나투어</a></li>
+            <li><a href="/vip/membership/skyeye.php">안과</a></li>
+            <li><a href="https://julgigo.intouchtour.com/rent/list.php" target="_blank"> 제주 렌트카</a></li>
+            <li><a href=" #">신차구입</a></li>
+            <li><a href="/vip/membership/car_insurance.php">자동차보험</a></li>
+          </ul>
+        </li>
+        <li>리빙</li>
+        <li>제휴
+          <ul class="gnb_sub-mob">
+            <li><a href="/vip/shopping/list.php">즐기고몰</a></li>
+            <li><a href="/vip/mall/rentner.php">장기렌트카</a></li>
+            <li><a href="/vip/mall/onpictures.php">온픽쳐스 가족사진</a></li>
+            <li><a href="#">서울메디컬 의료제휴</a></li>
+            <li><a href="#">통인 익스프레스</a></li>
+            <li><a href="/vip/mall/kkday.php">kk데이</a></li>
+          </ul>
+        </li>
+  
+      </ul>
+      <ul class="lnb">
+        <li><a href="/vip/mypage/index.php">마이페이지</a></li>
+        <li><a href="/vip/board/board_notice.php">공지사항</a></li>
+        <li><a href="/vip/board/board_notice.php">이벤트</li>
+        <li><a href="">이용후기</a></li>
+        <li><a href="/vip/board/faq_list.php">FAQ</a></li>
+        <li><a href="/vip/board/qna_list.php">1:1상담</a></li>
+      </ul>
+  
+      <div class="menu_sns">어디갈래 블로그</div>
+    </div>
+  </header>
+
+
+  <!-- 콘텐츠 시작 -->
+  <div class="contents mypage_contents sub_contents">
+    <section class="shadow_box rsv_det_box">
+      <h2>예약 정보</h2>
+      <div class="tv_mtxt">
+        <dl>
+          <dt>예약번호</dt>
+          <dd>51351354321</dd>
+        </dl>
+        <dl>
+          <dt>시설명</dt>
+          <dd>
+            어디갈래 호텔
+            
+          </dd>
+        </dl>
+        <dl>
+          <dt>객실명/평형</dt>
+          <dd>오션스탠다드 트윈 / 10평</dd>
+        </dl>
+        <dl>
+          <dt>체크인</dt>
+          <dd>2022-05-19 15:00</dd>
+        </dl>
+        <dl>
+          <dt>체크아웃</dt>
+          <dd>2022-05-20 11:00</dd>
+        </dl>
+        <dl>
+          <dt>예약상태</dt>
+          <dd>이용완료</dd>
+        </dl>
+      </div>
+    </section>
+    <section class="shadow_box rsv_det_box">
+      <h2>이용자 정보</h2>
+      <div class="tv_mtxt">
+        <dl>
+          <dt>성명</dt>
+          <dd>김연아</dd>
+        </dl>
+        <dl>
+          <dt>연락처</dt>
+          <dd>010-5555-5555</dd>
+        </dl>
+      </div>
+    </section>
+    <section class="shadow_box rsv_det_box">
+      <h2>결제정보</h2>
+      <div class="tv_mtxt">
+        <dl>
+          <dt>이용쿠폰</dt>
+          <dd>주말 이용권</dd>
+        </dl>
+        <dl>
+          <dt>금액</dt>
+          <dd>50,000원</dd>
+        </dl>
+      </div>
+    </section>
+    <section class="shadow_box rsv_det_box">
+      <h2>시설정보<button class="btn-red">바로가기</button></h2>
+      <div class="tv_mtxt">
+        <dl>
+          <dt>전화번호</dt>
+          <dd>02-1644-9111</dd>
+        </dl>
+        <dl>
+          <dt>주소</dt>
+          <dd>서울시 서초구 동작대로 132</dd>
+        </dl>
+        <dl>
+          <dt>오시는 길</dt>
+          <dd><a href="#" class="btn-white">지도보기</a></dd>
+        </dl>
+        
+      </div>
+    </section>
+  </div>
+
+  <footer>
+
+    <ul class="foot_links">
+      <li><a href="/vip/board/board_notice.php">공지사항</a></li>
+      <li><a href="/vip/board/faq_list.php">FAQ</a></li>
+      <li><a href="/vip/board/qna_list.php">1:1상담</a></li>
+    </ul>
+ 
+ 
+    <div class="address_wrap">
+      <div class="foot_terms">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+      </div>
+      <dl>
+        <dt>플랫폼 사업자</dt>
+        <dd>(주)지마이다스</dd>
+      </dl>
+      <dl>
+        <dt>주소</dt>
+        <dd>서울특별시 서초구 동작대로 132 안석빌딩 8층</dd>
+      </dl>
+      <dl>
+        <dt>대표</dt>
+        <dd>김신우</dd>
+      </dl>
+      <dl>
+        <dt>통신판매업신고번호</dt>
+        <dd>제 18-2427호</dd>
+      </dl>
+      <dl>
+        <dt>사업자등록번호</dt>
+        <dd>119-81-88110</dd>
+      </dl>
+      <dl>
+        <dt>개인정보관리 책임자</dt>
+        <dd>이요한</dd>
+      </dl>
+      <dl>
+        <dt>E-MAIL</dt>
+        <dd><a href="mailto:webmaster@gmidas.com">webmaster@gmidas.com</a></dd>
+      </dl>
+      <dl>
+        <dt>고객센터</dt>
+        <dd>1644-9111</dd>
+      </dl>
+    </div>
+    <div class="foot_logo">
+      <img src="http://img.gmidas.com/julgigobaseimg/vip/images/logo.png" alt="즐기고VIP 로고">
+      <span>© 2022 by Gmidas. All rights are reserved.</span>
+    </div>
+  </footer>
+  <div class="btn-top">
+    <img src="/img/icon_top.png" alt="페이지맨위로" />
+  </div>
+  <nav class="quick_menu">
+    <ul>
+      <li class="btn_menu">
+        <a href="#"><img src="../img/nav/app_menu.png" alt="메뉴" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="../img/nav/app_srch.png" alt="검색" /></a>
+      </li>
+      <li id="qck_home">
+        <a href="../index.html"><img src="../img/nav/app-home.png" alt="홈" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="../img/nav/app_res.png" alt="예약내역" /></a>
+      </li>
+      <li>
+        <a href="../mypage/index.html"><img src="../img/nav/app_my.png" alt="마이페이지" /></a>
+      </li>
+    </ul>
+  </nav>
+</body>
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+</html>
