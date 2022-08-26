@@ -121,14 +121,14 @@
     .header-mob .right-header .btn_user {
         width: 30px;
         height: 30px;
-        background: url("/vip/img/nav/app_my.png") no-repeat center;
+        background: url("/gowhere/img/nav/app_my.png") no-repeat center;
         background-size: 83%;
         text-align: center;
         font-size: 12px;
         cursor: pointer;
     }
     .header-mob .right-header .btn_home {
-        background: url("/vip/img/head_home.png") no-repeat center;
+        background: url("/gowhere/img/head_home.png") no-repeat center;
         width: 30px;
         height: 30px;
         background-size: 83%;
@@ -138,7 +138,7 @@
         cursor: pointer;
     }
     .header-mob .right-header .btn_srch {
-        background: url("/vip/img/nav/app_srch.png") no-repeat center;
+        background: url("/gowhere/img/nav/app_srch.png") no-repeat center;
         width: 30px;
         height: 30px;
         background-size: 83%;

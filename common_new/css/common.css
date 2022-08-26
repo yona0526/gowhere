@@ -117,7 +117,7 @@ header .right-header div:last-child {
 header .btn_user {
     width: 30px;
     height: 30px;
-    background: url("/vip/img/nav/app_my.png") no-repeat center;
+    background: url("/gowhere/img/nav/app_my.png") no-repeat center;
     background-size: 83%;
     text-align: center;
     font-size: 12px;
@@ -125,7 +125,7 @@ header .btn_user {
 }
 
 header .btn_home {
-    background: url("/vip/img/head_home.png") no-repeat center;
+    background: url("/gowhere/img/head_home.png") no-repeat center;
     width: 30px;
     height: 30px;
     background-size: 83%;
@@ -136,7 +136,7 @@ header .btn_home {
 }
 
 header .right-header .btn_srch {
-    background: url("/vip/img/nav/app_srch.png") no-repeat center;
+    background: url("/gowhere/img/nav/app_srch.png") no-repeat center;
     width: 30px;
     height: 30px;
     background-size: 83%;

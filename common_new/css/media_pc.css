@@ -177,7 +177,7 @@ header#header-pc .lnb span {
     width: 50%;
     height: 60px;
     background-color: #fff;
-    background: url("/vip/img/ico_srch.png") no-repeat 97% 40%;
+    background: url("/gowhere/img/ico_srch.png") no-repeat 97% 40%;
     border: 4px solid #085499;
     border-radius: 30px;
     margin: 10px auto;
@@ -236,37 +236,37 @@ header#header-pc .lnb span {
 
 .intro_btns li#intro_tour {
     width: 350px;
-    background: url('/vip/img/main_tour.png') no-repeat center 70%;
+    background: url('/gowhere/img/main_tour.png') no-repeat center 70%;
     background-size: 65%;
 }
 
 .intro_btns li#intro_invi {
-    background: url('/vip/img/mi_invi.png') no-repeat center 70%;
+    background: url('/gowhere/img/mi_invi.png') no-repeat center 70%;
     background-size: 40%;
 }
 
 .intro_btns li#intro_golf {
-    background: url('/vip/img/mi_golf.png') no-repeat center 70%;
+    background: url('/gowhere/img/mi_golf.png') no-repeat center 70%;
     background-size: 40%;
 }
 
 .intro_btns li#intro_hlth {
-    background: url('/vip/img/mi_health.png') no-repeat center 70%;
+    background: url('/gowhere/img/mi_health.png') no-repeat center 70%;
     background-size: 40%;
 }
 
 .intro_btns li#intro_mem {
-    background: url('/vip/img/mi_mem.png') no-repeat center 70%;
+    background: url('/gowhere/img/mi_mem.png') no-repeat center 70%;
     background-size: 40%;
 }
 
 .intro_btns li#intro_part {
-    background: url('/vip/img/mi_living.png') no-repeat center 70%;
+    background: url('/gowhere/img/mi_living.png') no-repeat center 70%;
     background-size: 40%;
 }
 
 .intro_btns li#intro_shop {
-    background: url('/vip/img/mi_shop.png') no-repeat center 70%;
+    background: url('/gowhere/img/mi_shop.png') no-repeat center 70%;
     background-size: 40%;
 }
 
@@ -1927,11 +1927,11 @@ s #heath_contents .tlist li {
 }
 
 .mbship_list #partner_01 {
-    background: url(http://img.gmidas.com/julgigobaseimg/vip/images/gaon_bg.jpg) no-repeat;
+    background: url(http://img.gmidas.com/julgigobaseimg/gowhere/images/gaon_bg.jpg) no-repeat;
 }
 
 .mbship_list #partner_02 {
-    background: url(http://img.gmidas.com/julgigobaseimg/vip/images/rentner_bg.png) no-repeat;
+    background: url(http://img.gmidas.com/julgigobaseimg/gowhere/images/rentner_bg.png) no-repeat;
 }
 
 .mbship_list #partner_03 {
