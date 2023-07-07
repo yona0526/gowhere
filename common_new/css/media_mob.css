@@ -35,10 +35,12 @@
     .header-mob h1 {
         margin-left: 13px;
         font-size: 5.8vw;
-        font-weight: 500
+        font-weight: 500;
+        display: flex;
+        align-items: center;
     }
     .header-mob h1 img {
-        width: 100px;
+        width: 70px;
     }
     header .menu .btn_menuClose .material-symbols-rounded {
         font-size: 10vw
