@@ -177,7 +177,7 @@ header#header-pc .lnb span {
     width: 50%;
     height: 60px;
     background-color: #fff;
-    background: url("/gowhere/gowhere/img/ico_srch.png") no-repeat 97% 40%;
+    background: url("/gowhere/img/ico_srch.png") no-repeat 97% 40%;
     border: 4px solid #085499;
     border-radius: 30px;
     margin: 10px auto;
@@ -550,7 +550,11 @@ section .swiper li .slide_detail p {
     font-size: 15px;
     display: block;
 }
-
+.icons_facil li .material-symbols-rounded {
+    font-size:36px;
+    font-weight:300;
+    margin-bottom:5px
+}
 .tv_room_detail {
     background: #f9f9f9;
 }
