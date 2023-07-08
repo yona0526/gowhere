@@ -949,7 +949,7 @@ section .swiper li .slide_detail p {
 
 .confirm_info .cf_thumb {
     width: 30%;
-    max-height: 220px;
+    height: 220px;
 }
 
 .confirm_info .cf_thumb img {
