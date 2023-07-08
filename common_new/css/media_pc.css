@@ -718,7 +718,7 @@ section .swiper li .slide_detail p {
 
 .tv_rm_img li .tv_room_img {
     width: 100%;
-    max-height: 350px;
+    height: 380px;
 }
 
 .tv_rm_img li img {
